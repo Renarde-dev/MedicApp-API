@@ -1,0 +1,16 @@
+{
+    "User": {
+        "lastName": "",
+        "firstName": "",
+        "age": 0,
+        "email": "",
+        "passwordHash": ""
+    },
+
+    "Medication": {
+        "name": "",
+        "cisCode": "",
+        "administrationRoutes": [""],
+        "importantInformations": [""]
+    }
+}
