@@ -7,8 +7,8 @@ import fr.medicapp.entities.User
 
 class MongoInstance {
 
-    lateinit var MedicationCollection : MongoCollection<Medication>
-    lateinit var UserCollection : MongoCollection<User>
+    var MedicationCollection : MongoCollection<Medication>
+    var UserCollection : MongoCollection<User>
 
     init {
         val uri = "CONNECTION_STRING_URI_PLACEHOLDER"
