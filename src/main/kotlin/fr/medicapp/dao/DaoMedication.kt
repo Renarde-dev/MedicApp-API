@@ -10,7 +10,7 @@ import java.util.ArrayList
 enum class DaoMedication {
     INSTANCE;
 
-    val collection = MongoInstance().MedicationCollection
+    val collection = MongoInstance().getMedicationCollection()
 
 
     fun getFromCisCode(ciscode: String): Medication? {
