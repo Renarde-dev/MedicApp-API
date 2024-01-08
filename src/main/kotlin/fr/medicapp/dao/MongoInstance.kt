@@ -7,15 +7,24 @@ import fr.medicapp.entities.User
 
 class MongoInstance {
 
-    var MedicationCollection : MongoCollection<Medication>
-    var UserCollection : MongoCollection<User>
+    private var medicationCollection : MongoCollection<Medication>
+    private var userCollection : MongoCollection<User>
 
     init {
         val uri = "CONNECTION_STRING_URI_PLACEHOLDER"
         val mongoClient = MongoClient.create(uri)
         val database = mongoClient.getDatabase("MedicApp")
-        MedicationCollection = database.getCollection<Medication>("medication")
-        UserCollection = database.getCollection<User>("user")
+        medicationCollection = database.getCollection<Medication>("medication")
+        userCollection = database.getCollection<User>("user")
     }
+
+    fun getMedicationCollection(): MongoCollection<Medication> {
+        return medicationCollection
+    }
+
+    fun getUserCollection(): MongoCollection<User> {
+        return userCollection
+    }
+
 
 }
