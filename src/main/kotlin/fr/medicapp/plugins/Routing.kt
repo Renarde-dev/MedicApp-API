@@ -12,28 +12,20 @@ import io.ktor.server.routing.*
 fun Application.configureRouting() {
     routing {
         get("/") {
-            call.respondText("Hello World!")
+            call.respondText("API de MedicApp")
         }
-
-        /*
-        // Find User from email and send it back if pass
-        get("/user") {
-
-        }
-
-        post("/user") {
-
-        }
-
-        delete("/user") {
-
-        }
-         */
 
         post("medication") {
+            /*
+            val text = call.receiveText()
+            call.application.environment.log.info(text)
+            */
             val rawData = call.receive<RawData>()
-            //call.application.environment.log.info()
+            //call.application.environment.log.info(rawData.Data[0].Name)
 
+            for (rawMedsInfo in rawData.Data) {
+
+            }
 
             call.respond(200)
         }
