@@ -3,6 +3,7 @@ package fr.medicapp.plugins
 import fr.medicapp.dao.DaoMedication
 import io.ktor.http.*
 import io.ktor.server.application.*
+import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 
@@ -26,6 +27,12 @@ fun Application.configureRouting() {
 
         }
          */
+
+        post("medication") {
+            val text = call.receiveText()
+            println(text)
+            call.respondText(text)
+        }
 
         get("medication/byCisCode/{ciscode}") {
             if (call.parameters["ciscode"] != null) {
