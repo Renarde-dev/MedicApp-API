@@ -1,16 +1,13 @@
 package fr.medicapp.plugins
 
 import fr.medicapp.dao.DaoMedication
-import fr.medicapp.entities.RawDataEntities.MedicationRawData
 import fr.medicapp.entities.RawDataEntities.RawData
-import io.ktor.client.engine.*
 import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
-import kotlinx.serialization.json.Json
-import javax.swing.text.html.HTML
+
 
 fun Application.configureRouting() {
     routing {

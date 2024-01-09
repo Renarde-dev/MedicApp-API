@@ -1,7 +1,6 @@
 package fr.medicapp.entities.RawDataEntities
 
 import kotlinx.serialization.Serializable
-import java.util.*
 
 @Serializable
 data class MedicationRawData (
