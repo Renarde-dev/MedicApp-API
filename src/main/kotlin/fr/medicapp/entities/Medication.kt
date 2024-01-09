@@ -1,8 +1,7 @@
 package fr.medicapp.entities
 
 data class Medication(
-    val _id : String,
+    val cisCode : String,
     val name: String,
-    val administrationRoutes : Array<String>,
-    val importantInformation : Array<String>
+    val administrationRoutes : List<String>,
 )

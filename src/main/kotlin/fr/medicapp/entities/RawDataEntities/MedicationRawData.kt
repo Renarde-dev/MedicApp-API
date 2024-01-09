@@ -21,6 +21,6 @@ data class MedicationRawData (
     val GenericGroups: List<GenericGroup>,
     val HasSmrOpinions: List<HasSmrOpinion>,
     val HasAsmrOpinions: List<HasSmrOpinion>,
-    val ImportantInformations: List<ImportantInformation>,
+    val ImportantInformations: List<RawImportantInformation>,
     val PrescriptionDispensingConditions: List<PrescriptionDispensingConditions>
 )
