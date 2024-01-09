@@ -1,7 +1,6 @@
 package fr.medicapp.plugins
 
 import fr.medicapp.dao.DaoMedication
-import fr.medicapp.entities.Medication
 import fr.medicapp.entities.RawDataEntities.RawData
 import io.ktor.http.*
 import io.ktor.server.application.*
@@ -16,13 +15,9 @@ fun Application.configureRouting() {
             call.respondText("API de MedicApp")
         }
 
-        post("medication") {
+        post("medication/renew") {
             val rawData = call.receive<RawData>()
-            val medicationArray = ArrayList<Medication>()
-            for (rawMedsData in rawData.Data) {
-                medicationArray.add(DaoMedication.getFromRawObject(rawMedsData))
-            }
-            DaoMedication.INSTANCE.insertAll(medicationArray)
+            DaoMedication.INSTANCE.renewDatabase(rawData.Data)
             call.respond(200)
         }
 

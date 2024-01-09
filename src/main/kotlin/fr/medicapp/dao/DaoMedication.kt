@@ -6,16 +6,26 @@ import fr.medicapp.entities.Medication
 import fr.medicapp.entities.RawDataEntities.MedicationRawData
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.runBlocking
-import java.util.ArrayList
+import kotlin.collections.ArrayList
 
 enum class DaoMedication {
     INSTANCE;
 
     private val collection = MongoInstance().getMedicationCollection()
 
-    fun insertAll(meds : ArrayList<Medication>) {
+    fun renewDatabase(data : ArrayList<MedicationRawData>) {
+        val newMedicationList = data.map {
+            Medication(
+                _id = it.CISCode,
+                name = it.Name,
+                administrationRoutes = it.AdministrationRoutes,
+                importantInformations = it.ImportantInformations.map { it.safetyInformationLink },
+                prescriptionDispensingConditions = it.PrescriptionDispensingConditions.map { it.prescriptionDispensingCondition }
+            )
+        }
         runBlocking {
-            collection.insertMany(meds)
+            collection.drop()
+            collection.insertMany(newMedicationList)
         }
     }
 
@@ -34,17 +44,5 @@ enum class DaoMedication {
             }
         }
         return res
-    }
-    
-    companion object {
-        fun getFromRawObject(raw : MedicationRawData) : Medication {
-            return Medication(
-                _id = raw.CISCode,
-                name = raw.Name,
-                administrationRoutes = raw.AdministrationRoutes,
-                importantInformations = raw.ImportantInformations.map { it.safetyInformationLink },
-                prescriptionDispensingConditions = raw.PrescriptionDispensingConditions.map { it.prescriptionDispensingCondition }
-            )
-        }
     }
 }
