@@ -1,11 +1,16 @@
 package fr.medicapp.plugins
 
 import fr.medicapp.dao.DaoMedication
+import fr.medicapp.entities.RawDataEntities.MedicationRawData
+import fr.medicapp.entities.RawDataEntities.RawData
+import io.ktor.client.engine.*
 import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
+import kotlinx.serialization.json.Json
+import javax.swing.text.html.HTML
 
 fun Application.configureRouting() {
     routing {
@@ -29,9 +34,11 @@ fun Application.configureRouting() {
          */
 
         post("medication") {
-            val text = call.receiveText()
-            println(text)
-            call.respondText(text)
+            val rawData = call.receive<RawData>()
+            //call.application.environment.log.info()
+
+
+            call.respond(200)
         }
 
         get("medication/byCisCode/{ciscode}") {

@@ -12,6 +12,11 @@ enum class DaoMedication {
 
     private val collection = MongoInstance().getMedicationCollection()
 
+    fun insertAll(meds : ArrayList<Medication>) {
+        runBlocking {
+            collection.insertMany(meds)
+        }
+    }
 
     fun getFromCisCode(ciscode: String): Medication? {
         return runBlocking {
