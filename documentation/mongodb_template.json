@@ -1,5 +1,6 @@
 {
     "User": {
+        "_id": "",
         "lastName": "",
         "firstName": "",
         "age": 0,
@@ -8,9 +9,10 @@
     },
 
     "Medication": {
+        "_id": "cisCode",
         "name": "",
-        "cisCode": "",
         "administrationRoutes": [""],
-        "importantInformation": [""]
+        "importantInformations": [""],
+        "prescriptionDispensingConditions": [""]
     }
 }

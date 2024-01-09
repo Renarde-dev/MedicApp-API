@@ -3,6 +3,7 @@ package fr.medicapp.dao
 import com.mongodb.client.model.Filters
 import com.mongodb.client.model.Indexes
 import fr.medicapp.entities.Medication
+import fr.medicapp.entities.RawDataEntities.MedicationRawData
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.runBlocking
 import java.util.ArrayList
@@ -33,5 +34,17 @@ enum class DaoMedication {
             }
         }
         return res
+    }
+    
+    companion object {
+        fun getFromRawObject(raw : MedicationRawData) : Medication {
+            return Medication(
+                _id = raw.CISCode,
+                name = raw.Name,
+                administrationRoutes = raw.AdministrationRoutes,
+                importantInformations = raw.ImportantInformations.map { it.safetyInformationLink },
+                prescriptionDispensingConditions = raw.PrescriptionDispensingConditions.map { it.prescriptionDispensingCondition }
+            )
+        }
     }
 }
