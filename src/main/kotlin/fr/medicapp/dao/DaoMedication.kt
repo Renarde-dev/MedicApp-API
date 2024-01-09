@@ -10,14 +10,13 @@ import java.util.ArrayList
 enum class DaoMedication {
     INSTANCE;
 
-    val collection = MongoInstance().getMedicationCollection()
+    private val collection = MongoInstance().getMedicationCollection()
 
 
     fun getFromCisCode(ciscode: String): Medication? {
         return runBlocking {
             collection.find(Filters.eq("ciscode",ciscode)).firstOrNull()
         }
-
     }
 
     fun getFromName(name: String): ArrayList<Medication> {
