@@ -12,7 +12,6 @@
         "_id": "cisCode",
         "name": "",
         "administrationRoutes": [""],
-        "importantInformations": [""],
-        "prescriptionDispensingConditions": [""]
+        "importantInformations": [""]
     }
 }
