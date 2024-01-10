@@ -19,13 +19,14 @@ enum class DaoMedication {
                 _id = it.CISCode,
                 name = it.Name,
                 administrationRoutes = it.AdministrationRoutes,
-                importantInformations = it.ImportantInformations.map { it.safetyInformationLink },
-                prescriptionDispensingConditions = it.PrescriptionDispensingConditions.map { it.prescriptionDispensingCondition }
+                importantInformations = it.ImportantInformations.map { it.SafetyInformationLink },
+                prescriptionDispensingConditions = it.PrescriptionDispensingConditions.map { it.PrescriptionDispensingCondition }
             )
         }
         runBlocking {
             collection.drop()
             collection.insertMany(newMedicationList)
+            collection.createIndex(Indexes.text("name"))
         }
     }
 
@@ -36,23 +37,12 @@ enum class DaoMedication {
     }
 
     fun getFromName(name: String): ArrayList<Medication> {
-        val res = ArrayList<Medication>()
-        runBlocking {
-            collection.createIndex(Indexes.text("title"))
-            collection.find(Filters.text(name)).collect {
-                res.add(it)
-            }
-        }
-        return res
-    }
-
-    fun test(): ArrayList<Medication> {
-        val l = ArrayList<Medication>()
-        runBlocking {
-            collection.find().collect {
+        return runBlocking {
+            val l = ArrayList<Medication>()
+            collection.find(Filters.text(name)).limit(10).collect {
                 l.add(it)
             }
+            return@runBlocking l
         }
-        return l
     }
 }

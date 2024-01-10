@@ -46,9 +46,5 @@ fun Application.configureRouting() {
                 call.respondText("Missing parameters", status = HttpStatusCode.BadRequest)
             }
         }
-
-        get("test") {
-            call.respondText(DaoMedication.INSTANCE.test().toString())
-        }
     }
 }

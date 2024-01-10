@@ -4,8 +4,8 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class RawImportantInformation(
-    val cisCode: String,
-    val safetyInformationStartDate: String?,
-    val safetyInformationEndDate: String?,
-    val safetyInformationLink: String
+    val CISCode: String,
+    val SafetyInformationStartDate: String?,
+    val SafetyInformationEndDate: String?,
+    val SafetyInformationLink: String
 )

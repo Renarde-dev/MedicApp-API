@@ -4,6 +4,6 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class PrescriptionDispensingConditions(
-    val cisCode: String,
-    val prescriptionDispensingCondition: String
+    val CISCode: String,
+    val PrescriptionDispensingCondition: String
 )

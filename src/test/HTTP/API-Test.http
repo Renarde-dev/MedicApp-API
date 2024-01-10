@@ -593,5 +593,12 @@ Content-Type: application/json
   ]
 }
 
-### Find meds
-GET http://0.0.0.0:8080/test
+### Find meds by cisCode
+GET http://0.0.0.0:8080/medication/byCisCode/61266250
+
+>>! ./findByCisCode.json
+
+### Find meds by name
+GET http://0.0.0.0:8080/medication/byName/Doliprane
+
+>>! ./findByName.json
