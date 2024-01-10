@@ -23,27 +23,15 @@ fun Application.configureSecurity() {
                 }
             }
         }
-
-        /*form(name = "authenticationAPIWithUser") {
-            userParamName = "user"
-            passwordParamName = "password"
-            challenge {
-
-            }
-        }*/
     }
     routing {
-        authenticate("authenticationAPI") {
+        /*authenticate("authenticationAPI") {
             get("/protected/route/basic") {
                 val principal = call.principal<UserIdPrincipal>()!!
                 call.respondText("Hello ${principal.name}")
             }
-        }
-        /*authenticate("authenticationAPIWithUser") {
-            get("/protected/route/form") {
-                val principal = call.principal<UserIdPrincipal>()!!
-                call.respondText("Hello ${principal.name}")
-            }
         }*/
+
+        TODO("Routing des Users, exemple ci-dessus")
     }
 }
