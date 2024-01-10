@@ -4,9 +4,9 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class GenericGroup(
-    val genericGroupId: String,
-    val genericGroupLabel: String,
-    val cisCode: String,
-    val genericType: String,
-    val sortNumber: Int?
+    val GenericGroupId: String,
+    val GenericGroupLabel: String,
+    val CISCode: String,
+    val GenericType: String,
+    val SortNumber: Int?
 )

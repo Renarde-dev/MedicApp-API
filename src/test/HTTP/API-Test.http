@@ -1,0 +1,604 @@
+### INSERT Medication (3)
+POST http://0.0.0.0:8080/medication/renew
+Content-Type: application/json
+
+{
+  "Data": [
+    {
+      "CISCode": "61266250",
+      "Name": "A 313 200 000 UI POUR CENT, POMMADE",
+      "PharmaceuticalForm": "POMMADE",
+      "AdministrationRoutes": [
+        "CUTAN\\u00C9E"
+      ],
+      "MarketingAuthorizationStatus": "AUTORISATION ACTIVE",
+      "MarketingAuthorizationProcedureType": "PROCDURE NATIONALE",
+      "CommercializationStatus": "COMMERCIALISE",
+      "MarketingAuthorizationDate": "1998-03-12",
+      "BdmStatus": "",
+      "EuropeanAuthorizationNumber": "",
+      "Holders": [
+        "PHARMA DEVELOPPEMENT"
+      ],
+      "EnhancedMonitoring": false,
+      "MedicationCompositions": [],
+      "MedicationPresentations": [],
+      "GenericGroups": [],
+      "HasSmrOpinions": [],
+      "HasAsmrOpinions": [],
+      "ImportantInformations": [],
+      "PrescriptionDispensingConditions": []
+    },
+    {
+      "CISCode": "555",
+      "Name": "A 313 200 000 UI POUR CENT, POMMADE",
+      "PharmaceuticalForm": "POMMADE",
+      "AdministrationRoutes": [
+        "CUTAN\\u00C9E"
+      ],
+      "MarketingAuthorizationStatus": "AUTORISATION ACTIVE",
+      "MarketingAuthorizationProcedureType": "PROCDURE NATIONALE",
+      "CommercializationStatus": "COMMERCIALISE",
+      "MarketingAuthorizationDate": "1998-03-12",
+      "BdmStatus": "",
+      "EuropeanAuthorizationNumber": "",
+      "Holders": [
+        "PHARMA DEVELOPPEMENT"
+      ],
+      "EnhancedMonitoring": false,
+      "MedicationCompositions": [],
+      "MedicationPresentations": [],
+      "GenericGroups": [],
+      "HasSmrOpinions": [],
+      "HasAsmrOpinions": [],
+      "ImportantInformations": [],
+      "PrescriptionDispensingConditions": []
+    },
+    {
+      "CISCode": "333",
+      "Name": "A 313 200 000 UI POUR CENT, POMMADE",
+      "PharmaceuticalForm": "POMMADE",
+      "AdministrationRoutes": [
+        "CUTAN\\u00C9E"
+      ],
+      "MarketingAuthorizationStatus": "AUTORISATION ACTIVE",
+      "MarketingAuthorizationProcedureType": "PROCDURE NATIONALE",
+      "CommercializationStatus": "COMMERCIALISE",
+      "MarketingAuthorizationDate": "1998-03-12",
+      "BdmStatus": "",
+      "EuropeanAuthorizationNumber": "",
+      "Holders": [
+        "PHARMA DEVELOPPEMENT"
+      ],
+      "EnhancedMonitoring": false,
+      "MedicationCompositions": [],
+      "MedicationPresentations": [],
+      "GenericGroups": [],
+      "HasSmrOpinions": [],
+      "HasAsmrOpinions": [],
+      "ImportantInformations": [],
+      "PrescriptionDispensingConditions": []
+    }
+  ]
+}
+
+### INSERT Medication (10 real data)
+POST http://0.0.0.0:8080/medication/renew
+Content-Type: application/json
+
+{
+  "Data": [
+    {
+      "CISCode": "61266250",
+      "Name": "A 313 200 000 UI POUR CENT, POMMADE",
+      "PharmaceuticalForm": "POMMADE",
+      "AdministrationRoutes": [
+        "CUTANÉE"
+      ],
+      "MarketingAuthorizationStatus": "AUTORISATION ACTIVE",
+      "MarketingAuthorizationProcedureType": "PROCÉDURE NATIONALE",
+      "CommercializationStatus": "COMMERCIALISÉE",
+      "MarketingAuthorizationDate": "1998-03-12",
+      "BdmStatus": "",
+      "EuropeanAuthorizationNumber": "",
+      "Holders": [
+        "PHARMA DEVELOPPEMENT"
+      ],
+      "EnhancedMonitoring": false,
+      "MedicationCompositions": [],
+      "MedicationPresentations": [],
+      "GenericGroups": [],
+      "HasSmrOpinions": [],
+      "HasAsmrOpinions": [],
+      "ImportantInformations": [],
+      "PrescriptionDispensingConditions": []
+    },
+    {
+      "CISCode": "62869109",
+      "Name": "A 313 50 000 U.I., CAPSULE MOLLE",
+      "PharmaceuticalForm": "CAPSULE MOLLE",
+      "AdministrationRoutes": [
+        "ORALE"
+      ],
+      "MarketingAuthorizationStatus": "AUTORISATION ACTIVE",
+      "MarketingAuthorizationProcedureType": "PROCÉDURE NATIONALE",
+      "CommercializationStatus": "COMMERCIALISÉE",
+      "MarketingAuthorizationDate": "1997-07-07",
+      "BdmStatus": "",
+      "EuropeanAuthorizationNumber": "",
+      "Holders": [
+        "PHARMA DEVELOPPEMENT"
+      ],
+      "EnhancedMonitoring": false,
+      "MedicationCompositions": [],
+      "MedicationPresentations": [],
+      "GenericGroups": [],
+      "HasSmrOpinions": [],
+      "HasAsmrOpinions": [],
+      "ImportantInformations": [],
+      "PrescriptionDispensingConditions": []
+    },
+    {
+      "CISCode": "61876780",
+      "Name": "ABACAVIR ARROW 300 MG, COMPRIMÉ PELLICULÉ SÉCABLE",
+      "PharmaceuticalForm": "COMPRIMÉ PELLICULÉ SÉCABLE",
+      "AdministrationRoutes": [
+        "ORALE"
+      ],
+      "MarketingAuthorizationStatus": "AUTORISATION ACTIVE",
+      "MarketingAuthorizationProcedureType": "PROCÉDURE DÉCENTRALISÉE",
+      "CommercializationStatus": "COMMERCIALISÉE",
+      "MarketingAuthorizationDate": "2019-10-22",
+      "BdmStatus": "",
+      "EuropeanAuthorizationNumber": "",
+      "Holders": [
+        "ARROW GENERIQUES"
+      ],
+      "EnhancedMonitoring": false,
+      "MedicationCompositions": [],
+      "MedicationPresentations": [],
+      "GenericGroups": [],
+      "HasSmrOpinions": [],
+      "HasAsmrOpinions": [],
+      "ImportantInformations": [],
+      "PrescriptionDispensingConditions": []
+    },
+    {
+      "CISCode": "63797011",
+      "Name": "ABACAVIR SANDOZ 300 MG, COMPRIMÉ PELLICULÉ SÉCABLE",
+      "PharmaceuticalForm": "COMPRIMÉ PELLICULÉ SÉCABLE",
+      "AdministrationRoutes": [
+        "ORALE"
+      ],
+      "MarketingAuthorizationStatus": "AUTORISATION ACTIVE",
+      "MarketingAuthorizationProcedureType": "PROCÉDURE DÉCENTRALISÉE",
+      "CommercializationStatus": "COMMERCIALISÉE",
+      "MarketingAuthorizationDate": "2016-12-30",
+      "BdmStatus": "",
+      "EuropeanAuthorizationNumber": "",
+      "Holders": [
+        "SANDOZ"
+      ],
+      "EnhancedMonitoring": false,
+      "MedicationCompositions": [],
+      "MedicationPresentations": [],
+      "GenericGroups": [],
+      "HasSmrOpinions": [],
+      "HasAsmrOpinions": [],
+      "ImportantInformations": [],
+      "PrescriptionDispensingConditions": []
+    },
+    {
+      "CISCode": "62401060",
+      "Name": "ABACAVIR VIATRIS 300 MG, COMPRIMÉ PELLICULÉ SÉCABLE",
+      "PharmaceuticalForm": "COMPRIMÉ PELLICULÉ SÉCABLE",
+      "AdministrationRoutes": [
+        "ORALE"
+      ],
+      "MarketingAuthorizationStatus": "AUTORISATION ACTIVE",
+      "MarketingAuthorizationProcedureType": "PROCÉDURE DÉCENTRALISÉE",
+      "CommercializationStatus": "COMMERCIALISÉE",
+      "MarketingAuthorizationDate": "2018-02-21",
+      "BdmStatus": "",
+      "EuropeanAuthorizationNumber": "",
+      "Holders": [
+        "VIATRIS SANTE"
+      ],
+      "EnhancedMonitoring": false,
+      "MedicationCompositions": [],
+      "MedicationPresentations": [],
+      "GenericGroups": [],
+      "HasSmrOpinions": [],
+      "HasAsmrOpinions": [],
+      "ImportantInformations": [],
+      "PrescriptionDispensingConditions": []
+    },
+    {
+      "CISCode": "68257528",
+      "Name": "ABACAVIR/LAMIVUDINE ACCORD 600 MG/300 MG, COMPRIMÉ PELLICULÉ",
+      "PharmaceuticalForm": "COMPRIMÉ PELLICULÉ",
+      "AdministrationRoutes": [
+        "ORALE"
+      ],
+      "MarketingAuthorizationStatus": "AUTORISATION ACTIVE",
+      "MarketingAuthorizationProcedureType": "PROCÉDURE NATIONALE",
+      "CommercializationStatus": "COMMERCIALISÉE",
+      "MarketingAuthorizationDate": "2017-03-16",
+      "BdmStatus": "",
+      "EuropeanAuthorizationNumber": "",
+      "Holders": [
+        "ACCORD HEALTHCARE FRANCE"
+      ],
+      "EnhancedMonitoring": false,
+      "MedicationCompositions": [],
+      "MedicationPresentations": [],
+      "GenericGroups": [],
+      "HasSmrOpinions": [],
+      "HasAsmrOpinions": [],
+      "ImportantInformations": [],
+      "PrescriptionDispensingConditions": []
+    },
+    {
+      "CISCode": "62828870",
+      "Name": "ABACAVIR/LAMIVUDINE ARROW 600 MG/300 MG, COMPRIMÉ PELLICULÉ",
+      "PharmaceuticalForm": "COMPRIMÉ PELLICULÉ",
+      "AdministrationRoutes": [
+        "ORALE"
+      ],
+      "MarketingAuthorizationStatus": "AUTORISATION ACTIVE",
+      "MarketingAuthorizationProcedureType": "PROCÉDURE DÉCENTRALISÉE",
+      "CommercializationStatus": "COMMERCIALISÉE",
+      "MarketingAuthorizationDate": "2017-12-15",
+      "BdmStatus": "",
+      "EuropeanAuthorizationNumber": "",
+      "Holders": [
+        "ARROW GENERIQUES"
+      ],
+      "EnhancedMonitoring": false,
+      "MedicationCompositions": [],
+      "MedicationPresentations": [],
+      "GenericGroups": [],
+      "HasSmrOpinions": [],
+      "HasAsmrOpinions": [],
+      "ImportantInformations": [],
+      "PrescriptionDispensingConditions": []
+    },
+    {
+      "CISCode": "63431640",
+      "Name": "ABACAVIR/LAMIVUDINE BIOGARAN 600 MG/300 MG, COMPRIMÉ PELLICULÉ",
+      "PharmaceuticalForm": "COMPRIMÉ PELLICULÉ",
+      "AdministrationRoutes": [
+        "ORALE"
+      ],
+      "MarketingAuthorizationStatus": "AUTORISATION ACTIVE",
+      "MarketingAuthorizationProcedureType": "PROCÉDURE NATIONALE",
+      "CommercializationStatus": "COMMERCIALISÉE",
+      "MarketingAuthorizationDate": "2017-02-14",
+      "BdmStatus": "",
+      "EuropeanAuthorizationNumber": "",
+      "Holders": [
+        "BIOGARAN"
+      ],
+      "EnhancedMonitoring": false,
+      "MedicationCompositions": [],
+      "MedicationPresentations": [],
+      "GenericGroups": [],
+      "HasSmrOpinions": [],
+      "HasAsmrOpinions": [],
+      "ImportantInformations": [],
+      "PrescriptionDispensingConditions": []
+    },
+    {
+      "CISCode": "65196479",
+      "Name": "ABACAVIR/LAMIVUDINE EG 600 MG/300 MG, COMPRIMÉ PELLICULÉ",
+      "PharmaceuticalForm": "COMPRIMÉ PELLICULÉ",
+      "AdministrationRoutes": [
+        "ORALE"
+      ],
+      "MarketingAuthorizationStatus": "AUTORISATION ACTIVE",
+      "MarketingAuthorizationProcedureType": "PROCÉDURE DÉCENTRALISÉE",
+      "CommercializationStatus": "COMMERCIALISÉE",
+      "MarketingAuthorizationDate": "2017-01-13",
+      "BdmStatus": "",
+      "EuropeanAuthorizationNumber": "",
+      "Holders": [
+        "EG LABO - LABORATOIRES EUROGENERICS"
+      ],
+      "EnhancedMonitoring": false,
+      "MedicationCompositions": [],
+      "MedicationPresentations": [],
+      "GenericGroups": [],
+      "HasSmrOpinions": [],
+      "HasAsmrOpinions": [],
+      "ImportantInformations": [],
+      "PrescriptionDispensingConditions": []
+    },
+    {
+      "CISCode": "62170486",
+      "Name": "ABACAVIR/LAMIVUDINE MYLAN 600 MG/300 MG, COMPRIMÉ PELLICULÉ",
+      "PharmaceuticalForm": "COMPRIMÉ PELLICULÉ",
+      "AdministrationRoutes": [
+        "ORALE"
+      ],
+      "MarketingAuthorizationStatus": "AUTORISATION ACTIVE",
+      "MarketingAuthorizationProcedureType": "PROCÉDURE NATIONALE",
+      "CommercializationStatus": "NON COMMERCIALISÉE",
+      "MarketingAuthorizationDate": "2017-03-03",
+      "BdmStatus": "WARNING DISPONIBILITÉ",
+      "EuropeanAuthorizationNumber": "",
+      "Holders": [
+        "MYLAN SAS"
+      ],
+      "EnhancedMonitoring": false,
+      "MedicationCompositions": [],
+      "MedicationPresentations": [],
+      "GenericGroups": [],
+      "HasSmrOpinions": [],
+      "HasAsmrOpinions": [],
+      "ImportantInformations": [],
+      "PrescriptionDispensingConditions": []
+    },
+    {
+      "CISCode": "67720261",
+      "Name": "ABACAVIR/LAMIVUDINE SANDOZ 600 MG/300 MG, COMPRIMÉ PELLICULÉ",
+      "PharmaceuticalForm": "COMPRIMÉ PELLICULÉ",
+      "AdministrationRoutes": [
+        "ORALE"
+      ],
+      "MarketingAuthorizationStatus": "AUTORISATION ACTIVE",
+      "MarketingAuthorizationProcedureType": "PROCÉDURE NATIONALE",
+      "CommercializationStatus": "COMMERCIALISÉE",
+      "MarketingAuthorizationDate": "2017-03-03",
+      "BdmStatus": "",
+      "EuropeanAuthorizationNumber": "",
+      "Holders": [
+        "SANDOZ"
+      ],
+      "EnhancedMonitoring": false,
+      "MedicationCompositions": [],
+      "MedicationPresentations": [],
+      "GenericGroups": [],
+      "HasSmrOpinions": [],
+      "HasAsmrOpinions": [],
+      "ImportantInformations": [],
+      "PrescriptionDispensingConditions": []
+    },
+    {
+      "CISCode": "65857902",
+      "Name": "ABACAVIR/LAMIVUDINE TEVA 600 MG/300 MG, COMPRIMÉ PELLICULÉ",
+      "PharmaceuticalForm": "COMPRIMÉ PELLICULÉ",
+      "AdministrationRoutes": [
+        "ORALE"
+      ],
+      "MarketingAuthorizationStatus": "AUTORISATION ACTIVE",
+      "MarketingAuthorizationProcedureType": "PROCÉDURE DÉCENTRALISÉE",
+      "CommercializationStatus": "COMMERCIALISÉE",
+      "MarketingAuthorizationDate": "2017-05-03",
+      "BdmStatus": "",
+      "EuropeanAuthorizationNumber": "",
+      "Holders": [
+        "TEVA SANTE"
+      ],
+      "EnhancedMonitoring": false,
+      "MedicationCompositions": [],
+      "MedicationPresentations": [],
+      "GenericGroups": [],
+      "HasSmrOpinions": [],
+      "HasAsmrOpinions": [],
+      "ImportantInformations": [],
+      "PrescriptionDispensingConditions": []
+    },
+    {
+      "CISCode": "67567004",
+      "Name": "ABACAVIR/LAMIVUDINE VIATRIS 600 MG/300 MG, COMPRIMÉ PELLICULÉ",
+      "PharmaceuticalForm": "COMPRIMÉ PELLICULÉ",
+      "AdministrationRoutes": [
+        "ORALE"
+      ],
+      "MarketingAuthorizationStatus": "AUTORISATION ACTIVE",
+      "MarketingAuthorizationProcedureType": "PROCÉDURE DÉCENTRALISÉE",
+      "CommercializationStatus": "COMMERCIALISÉE",
+      "MarketingAuthorizationDate": "2018-01-08",
+      "BdmStatus": "",
+      "EuropeanAuthorizationNumber": "",
+      "Holders": [
+        "VIATRIS SANTE"
+      ],
+      "EnhancedMonitoring": false,
+      "MedicationCompositions": [],
+      "MedicationPresentations": [],
+      "GenericGroups": [],
+      "HasSmrOpinions": [],
+      "HasAsmrOpinions": [],
+      "ImportantInformations": [],
+      "PrescriptionDispensingConditions": []
+    },
+    {
+      "CISCode": "62202005",
+      "Name": "ABACAVIR/LAMIVUDINE ZENTIVA 600 MG/300 MG, COMPRIMÉ PELLICULÉ",
+      "PharmaceuticalForm": "COMPRIMÉ PELLICULÉ",
+      "AdministrationRoutes": [
+        "ORALE"
+      ],
+      "MarketingAuthorizationStatus": "AUTORISATION ACTIVE",
+      "MarketingAuthorizationProcedureType": "PROCÉDURE DÉCENTRALISÉE",
+      "CommercializationStatus": "COMMERCIALISÉE",
+      "MarketingAuthorizationDate": "2018-05-30",
+      "BdmStatus": "",
+      "EuropeanAuthorizationNumber": "",
+      "Holders": [
+        "ZENTIVA FRANCE"
+      ],
+      "EnhancedMonitoring": false,
+      "MedicationCompositions": [],
+      "MedicationPresentations": [],
+      "GenericGroups": [],
+      "HasSmrOpinions": [],
+      "HasAsmrOpinions": [],
+      "ImportantInformations": [],
+      "PrescriptionDispensingConditions": []
+    },
+    {
+      "CISCode": "63152345",
+      "Name": "ABACAVIR/LAMIVUDINE/ZIDOVUDINE VIATRIS 300 MG/150 MG/300 MG, COMPRIMÉ PELLICULÉ",
+      "PharmaceuticalForm": "COMPRIMÉ PELLICULÉ",
+      "AdministrationRoutes": [
+        "ORALE"
+      ],
+      "MarketingAuthorizationStatus": "AUTORISATION ACTIVE",
+      "MarketingAuthorizationProcedureType": "PROCÉDURE DÉCENTRALISÉE",
+      "CommercializationStatus": "COMMERCIALISÉE",
+      "MarketingAuthorizationDate": "2017-12-21",
+      "BdmStatus": "",
+      "EuropeanAuthorizationNumber": "",
+      "Holders": [
+        "VIATRIS SANTE"
+      ],
+      "EnhancedMonitoring": false,
+      "MedicationCompositions": [],
+      "MedicationPresentations": [],
+      "GenericGroups": [],
+      "HasSmrOpinions": [],
+      "HasAsmrOpinions": [],
+      "ImportantInformations": [],
+      "PrescriptionDispensingConditions": []
+    },
+    {
+      "CISCode": "66513085",
+      "Name": "ABASAGLAR 100 UNITÉS/ML, SOLUTION INJECTABLE EN CARTOUCHE",
+      "PharmaceuticalForm": "SOLUTION INJECTABLE",
+      "AdministrationRoutes": [
+        "SOUS-CUTANÉE"
+      ],
+      "MarketingAuthorizationStatus": "AUTORISATION ACTIVE",
+      "MarketingAuthorizationProcedureType": "PROCÉDURE CENTRALISÉE",
+      "CommercializationStatus": "COMMERCIALISÉE",
+      "MarketingAuthorizationDate": "2014-09-09",
+      "BdmStatus": "",
+      "EuropeanAuthorizationNumber": "EU/1/14/944",
+      "Holders": [
+        "ELI LILLY NEDERLAND BV (PAY-BAS)"
+      ],
+      "EnhancedMonitoring": false,
+      "MedicationCompositions": [],
+      "MedicationPresentations": [],
+      "GenericGroups": [],
+      "HasSmrOpinions": [],
+      "HasAsmrOpinions": [],
+      "ImportantInformations": [],
+      "PrescriptionDispensingConditions": []
+    },
+    {
+      "CISCode": "64332894",
+      "Name": "ABASAGLAR 100 UNITÉS/ML, SOLUTION INJECTABLE EN STYLO PRÉREMPLI",
+      "PharmaceuticalForm": "SOLUTION INJECTABLE",
+      "AdministrationRoutes": [
+        "SOUS-CUTANÉE"
+      ],
+      "MarketingAuthorizationStatus": "AUTORISATION ACTIVE",
+      "MarketingAuthorizationProcedureType": "PROCÉDURE CENTRALISÉE",
+      "CommercializationStatus": "COMMERCIALISÉE",
+      "MarketingAuthorizationDate": "2014-09-09",
+      "BdmStatus": "",
+      "EuropeanAuthorizationNumber": "EU/1/14/944",
+      "Holders": [
+        "ELI LILLY NEDERLAND BV (PAY-BAS)"
+      ],
+      "EnhancedMonitoring": false,
+      "MedicationCompositions": [],
+      "MedicationPresentations": [],
+      "GenericGroups": [],
+      "HasSmrOpinions": [],
+      "HasAsmrOpinions": [],
+      "ImportantInformations": [],
+      "PrescriptionDispensingConditions": []
+    },
+    {
+      "CISCode": "65329132",
+      "Name": "ABECMA 260 - 500 X 1 000 000 CELLULES, DISPERSION POUR PERFUSION",
+      "PharmaceuticalForm": "DISPERSION POUR PERFUSION",
+      "AdministrationRoutes": [
+        "INTRAVEINEUSE"
+      ],
+      "MarketingAuthorizationStatus": "AUTORISATION ACTIVE",
+      "MarketingAuthorizationProcedureType": "PROCÉDURE CENTRALISÉE",
+      "CommercializationStatus": "COMMERCIALISÉE",
+      "MarketingAuthorizationDate": "2021-08-18",
+      "BdmStatus": "",
+      "EuropeanAuthorizationNumber": "EU/1/21/1539",
+      "Holders": [
+        "BRISTOL-MYERS SQUIBB PHARMA (IRLANDE)"
+      ],
+      "EnhancedMonitoring": true,
+      "MedicationCompositions": [],
+      "MedicationPresentations": [],
+      "GenericGroups": [],
+      "HasSmrOpinions": [],
+      "HasAsmrOpinions": [],
+      "ImportantInformations": [],
+      "PrescriptionDispensingConditions": []
+    },
+    {
+      "CISCode": "66207341",
+      "Name": "ABELCET 5 MG/ML, SUSPENSION À DILUER POUR PERFUSION",
+      "PharmaceuticalForm": "SUSPENSION À DILUER POUR PERFUSION",
+      "AdministrationRoutes": [
+        "INTRAVEINEUSE"
+      ],
+      "MarketingAuthorizationStatus": "AUTORISATION ACTIVE",
+      "MarketingAuthorizationProcedureType": "PROCÉDURE NATIONALE",
+      "CommercializationStatus": "NON COMMERCIALISÉE",
+      "MarketingAuthorizationDate": "1997-06-10",
+      "BdmStatus": "WARNING DISPONIBILITÉ",
+      "EuropeanAuthorizationNumber": "",
+      "Holders": [
+        "ACINO FRANCE"
+      ],
+      "EnhancedMonitoring": false,
+      "MedicationCompositions": [],
+      "MedicationPresentations": [],
+      "GenericGroups": [],
+      "HasSmrOpinions": [],
+      "HasAsmrOpinions": [],
+      "ImportantInformations": [],
+      "PrescriptionDispensingConditions": []
+    },
+    {
+      "CISCode": "60386663",
+      "Name": "ABELMOSCHUS BOIRON, DEGRÉ DE DILUTION COMPRIS ENTRE 4CH ET 30CH OU ENTRE 7DH ET 60DH",
+      "PharmaceuticalForm": "COMPRIMÉ ET SOLUTION(S) ET GRANULES ET POUDRE ET POMMADE",
+      "AdministrationRoutes": [
+        "CUTANÉE",
+        "ORALE",
+        "SUBLINGUALE"
+      ],
+      "MarketingAuthorizationStatus": "AUTORISATION ACTIVE",
+      "MarketingAuthorizationProcedureType": "ENREG HOMÉO (PROC. NAT.)",
+      "CommercializationStatus": "COMMERCIALISÉE",
+      "MarketingAuthorizationDate": "2019-03-01",
+      "BdmStatus": "",
+      "EuropeanAuthorizationNumber": "",
+      "Holders": [
+        "BOIRON"
+      ],
+      "EnhancedMonitoring": false,
+      "MedicationCompositions": [],
+      "MedicationPresentations": [],
+      "GenericGroups": [],
+      "HasSmrOpinions": [],
+      "HasAsmrOpinions": [],
+      "ImportantInformations": [],
+      "PrescriptionDispensingConditions": []
+    }
+  ]
+}
+
+### Find meds by cisCode
+GET http://0.0.0.0:8080/medication/byCisCode/61266250
+
+>>! ./findByCisCode.json
+
+### Find meds by name
+GET http://0.0.0.0:8080/medication/byName/Doliprane
+
+>>! ./findByName.json

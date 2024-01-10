@@ -4,6 +4,6 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class TransparencyCommissionOpinionLinks(
-    val hasDossierCode: String,
-    val commissionOpinionLink: String?
+    val HasDossierCode: String,
+    val CommissionOpinionLink: String?
 )
