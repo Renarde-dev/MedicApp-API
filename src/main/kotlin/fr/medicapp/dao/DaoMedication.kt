@@ -4,7 +4,6 @@ import com.mongodb.client.model.Filters
 import com.mongodb.client.model.Indexes
 import fr.medicapp.entities.Medication
 import fr.medicapp.entities.RawDataEntities.MedicationRawData
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.runBlocking
@@ -51,8 +50,10 @@ enum class DaoMedication {
     fun test() : ArrayList<Medication> {
         val l = ArrayList<Medication>()
          runBlocking {
-            collection.find().map { it -> l.add(it) }
-        }
+            collection.find().collect {
+                l.add(it)
+            }
+         }
         return l
     }
 }

@@ -1,0 +1,91 @@
+POST http://0.0.0.0:8080/medication/renew
+Content-Type: application/json
+
+{
+  "Data": [
+    {
+      "_id": "1312",
+      "name": "Acab",
+      "administrationRoutes": ["Pavé","batte"],
+      "importantInformations": ["Un flic une balle"],
+      "prescriptionDispensingConditions": ["Ne pas être flic","Etre de gauche"]
+    },
+    {
+      "_id": "1871",
+      "name": "Kropot",
+      "administrationRoutes": ["Pain","Conquête"],
+      "importantInformations": ["Ecole anar"],
+      "prescriptionDispensingConditions": ["Ukraine","Armée noire"]
+    },
+    {
+      "_id": "2016",
+      "name": "Béboute",
+      "administrationRoutes": ["Griffoire","Gamelle"],
+      "importantInformations": ["Miaou"],
+      "prescriptionDispensingConditions": ["Chien","Fenêtre","Sale de bain"]
+    },
+    {
+      "_id": "555",
+      "name": "Acab",
+      "administrationRoutes": ["Pavé","batte"],
+      "importantInformations": ["Un flic une balle"],
+      "prescriptionDispensingConditions": ["Ne pas être flic","Etre de gauche"]
+    },
+    {
+      "_id": "333",
+      "name": "Kropot",
+      "administrationRoutes": ["Pain","Conquête"],
+      "importantInformations": ["Ecole anar"],
+      "prescriptionDispensingConditions": ["Ukraine","Armée noire"]
+    },
+    {
+      "_id": "222",
+      "name": "Béboute",
+      "administrationRoutes": ["Griffoire","Gamelle"],
+      "importantInformations": ["Miaou"],
+      "prescriptionDispensingConditions": ["Chien","Fenêtre","Sale de bain"]
+    },
+    {
+      "_id": "12",
+      "name": "Acab",
+      "administrationRoutes": ["Pavé","batte"],
+      "importantInformations": ["Un flic une balle"],
+      "prescriptionDispensingConditions": ["Ne pas être flic","Etre de gauche"]
+    },
+    {
+      "_id": "57",
+      "name": "Kropot",
+      "administrationRoutes": ["Pain","Conquête"],
+      "importantInformations": ["Ecole anar"],
+      "prescriptionDispensingConditions": ["Ukraine","Armée noire"]
+    },
+    {
+      "_id": "90",
+      "name": "Béboute",
+      "administrationRoutes": ["Griffoire","Gamelle"],
+      "importantInformations": ["Miaou"],
+      "prescriptionDispensingConditions": ["Chien","Fenêtre","Sale de bain"]
+    },
+    {
+      "_id": "87",
+      "name": "Acab",
+      "administrationRoutes": ["Pavé","batte"],
+      "importantInformations": ["Un flic une balle"],
+      "prescriptionDispensingConditions": ["Ne pas être flic","Etre de gauche"]
+    },
+    {
+      "_id": "64",
+      "name": "Kropot",
+      "administrationRoutes": ["Pain","Conquête"],
+      "importantInformations": ["Ecole anar"],
+      "prescriptionDispensingConditions": ["Ukraine","Armée noire"]
+    },
+    {
+      "_id": "17",
+      "name": "Béboute",
+      "administrationRoutes": ["Griffoire","Gamelle"],
+      "importantInformations": ["Miaou"],
+      "prescriptionDispensingConditions": ["Chien","Fenêtre","Sale de bain"]
+    }
+  ]
+}
