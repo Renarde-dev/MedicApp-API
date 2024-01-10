@@ -4,7 +4,9 @@ import com.mongodb.client.model.Filters
 import com.mongodb.client.model.Indexes
 import fr.medicapp.entities.Medication
 import fr.medicapp.entities.RawDataEntities.MedicationRawData
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.firstOrNull
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.runBlocking
 import kotlin.collections.ArrayList
 
@@ -31,7 +33,7 @@ enum class DaoMedication {
 
     fun getFromCisCode(ciscode: String): Medication? {
         return runBlocking {
-            collection.find(Filters.eq("ciscode",ciscode)).firstOrNull()
+            collection.find(Filters.eq("_id",ciscode)).firstOrNull()
         }
     }
 
@@ -44,5 +46,13 @@ enum class DaoMedication {
             }
         }
         return res
+    }
+
+    fun test() : ArrayList<Medication> {
+        val l = ArrayList<Medication>()
+         runBlocking {
+            collection.find().map { it -> l.add(it) }
+        }
+        return l
     }
 }

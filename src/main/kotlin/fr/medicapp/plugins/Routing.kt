@@ -35,7 +35,7 @@ fun Application.configureRouting() {
         }
 
         get("medication/byName/{name}") {
-            if (call.parameters["ciscode"] != null) {
+            if (call.parameters["name"] != null) {
                 val med = DaoMedication.INSTANCE.getFromName(call.parameters["name"]!!)
                 if (med.isNotEmpty()) {
                     call.respond(med)
@@ -45,6 +45,10 @@ fun Application.configureRouting() {
             } else {
                 call.respondText("Missing parameters", status = HttpStatusCode.BadRequest)
             }
+        }
+
+        get("test") {
+            call.respondText(DaoMedication.INSTANCE.test().toString())
         }
     }
 }
