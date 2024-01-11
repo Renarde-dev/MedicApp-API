@@ -13,9 +13,9 @@ class MongoInstance {
     init {
         val uri = "mongodb+srv://ktor:fs14FL4ibexKAFds@sae-medecine-solution.0vspyix.mongodb.net/?retryWrites=true&w=majority"
         val mongoClient = MongoClient.create(uri)
-        val database = mongoClient.getDatabase("test")
+        val database = mongoClient.getDatabase("MedicApp")
         medicationCollection = database.getCollection<Medication>("Medication")
-        userCollection = database.getCollection<User>("user")
+        userCollection = database.getCollection<User>("User")
     }
 
     fun getMedicationCollection(): MongoCollection<Medication> {
