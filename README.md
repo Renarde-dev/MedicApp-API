@@ -6,8 +6,6 @@
 <p align="center"><b>This project is licensed under the MIT. For more details, see the <a href="LICENSE">LICENSE</a> file.</b></p>
 <p align="center"><i>"API for MedicApp"</i></p>
 
-<p align="center">Published for <img src="https://raw.githubusercontent.com/anythingcodes/slack-emoji-for-techies/gh-pages/emoji/tux.png" align="top" width="24" /> with :gift_heart: by anrouxel</p>
-
 ## Authors
 * Antonin Rouxel ([anrouxel](https://github.com/anrouxel))
 * Quentin Tegny ([Qt144](https://github.com/Qt144))
